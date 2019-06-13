@@ -13,6 +13,8 @@ end
 group :production do
   # Use pg as the database for Active Record production phase
   gem 'pg'
+  #include amazon gem for heroku
+  gem "aws-sdk-s3", require: false
 end
 
 # Use Puma as the app server
